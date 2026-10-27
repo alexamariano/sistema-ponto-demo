@@ -506,6 +506,7 @@ def get_todas_batidas():
     if DATABASE_URL:
         cursor = conn.cursor(cursor_factory=RealDictCursor)
     else:
+        conn.row_factory = sqlite3.Row  # <--- ADICIONE ESTA LINHA
         cursor = conn.cursor()
     cursor.execute("SELECT * FROM batidas ORDER BY data_hora ASC")
     registros = [dict(row) for row in cursor.fetchall()]
@@ -519,6 +520,7 @@ def painel_admin():
     if DATABASE_URL:
         cursor = conn.cursor(cursor_factory=RealDictCursor)
     else:
+        conn.row_factory = sqlite3.Row  # <--- ADICIONE ESTA LINHA
         cursor = conn.cursor()
     cursor.execute("SELECT * FROM batidas ORDER BY data_hora DESC")
     registros = [dict(row) for row in cursor.fetchall()]
