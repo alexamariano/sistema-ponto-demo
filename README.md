@@ -83,7 +83,7 @@ Esta solução foi desenvolvida para solucionar essa dor, centralizando o regist
 
 1. **Clonar o repositório:**
    ```bash
-   git clone [https://github.com/SEU_USUARIO/sistema-ponto-demo.git](https://github.com/SEU_USUARIO/sistema-ponto-demo.git)
+   git clone [https://github.com/alexamariano/sistema-ponto-demo.git](https://github.com/alexamariano/sistema-ponto-demo.git)
    cd sistema-ponto-demo
    ```
 
@@ -119,6 +119,3 @@ Esta solução foi desenvolvida para solucionar essa dor, centralizando o regist
 ## 🔒 Segurança e LGPD
 
 Os dados exibidos neste repositório e na versão de demonstração (nomes de funcionários, tabelas de custos e códigos de projetos) foram **100% anonimizados** para preservação de sigilo corporativo e conformidade com a LGPD.
-``GLOBAL_STRING_REPLACEMENT_KEY_30``
-
-Podemos avançar para a **Etapa 3: Elaboração da publicação do LinkedIn e configuração dos destaques no perfil**?
