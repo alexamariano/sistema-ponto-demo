@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import sqlite3
 import openpyxl
 import base64
 import resend
@@ -26,7 +27,6 @@ resend.api_key = RESEND_API_KEY
 def get_db_connection():
     db_url = os.environ.get("DATABASE_URL")
     if db_url:
-        # Limpa aspas, espaços e remove parametros incompativeis com psycopg2 (como pgbouncer=true)
         db_url = db_url.strip().strip('"').strip("'")
         if "?pgbouncer=true" in db_url:
             db_url = db_url.replace("?pgbouncer=true", "")
@@ -37,7 +37,6 @@ def get_db_connection():
         return conn
     else:
         # Fallback para testes locais em SQLite
-        import sqlite3
         conn = sqlite3.connect('ponto.db')
         return conn
 
