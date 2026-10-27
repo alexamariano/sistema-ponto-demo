@@ -1,0 +1,18 @@
+# Credenciais e Variáveis de Ambiente
+.env
+*.env
+
+# Banco SQLite Local de Testes
+*.db
+ponto.db
+
+# Ambientes Virtuais Python
+venv/
+env/
+.venv/
+
+# Cache e Arquivos Temporários
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
